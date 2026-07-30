@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mu-Hanoi2 - Season2 Cày cuốc</title>
+    <meta name="description" content="Mu-Hanoi2, server cày cuốc lâu dài, không Webshop, Không Xshop, công bằng và hoài niệm.">
+    <meta name="keywords" content="Mu Online, Mu-Hanoi2, Mumienphi, Mu Season 2, Muhn, muhanoi, muhanoi2, muxua, mu2.0, Mu hoài niệm, Mu 2026, mu hay">
+    <style>
+        body { background: #000; color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+        .wrapper { display: flex; max-width: 1000px; margin: 20px auto; gap: 20px; padding: 10px; }
+        
+        .sidebar { width: 250px; background: rgba(20, 20, 20, 0.9); border: 1px solid #d4af37; padding: 20px; height: fit-content; }
+        .sidebar a { display: block; color: #fff; text-decoration: none; padding: 10px 0; border-bottom: 1px solid #333; }
+        .sidebar a:hover { color: #d4af37; }
+
+        .main-content { flex: 1; background: rgba(20, 20, 20, 0.9); border: 1px solid #d4af37; padding: 30px; }
+        h1 { color: #d4af37; margin-bottom: 20px; }
+
+        /* Bảng Boss Drop */
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 40px; }
+        th, td { border: 1px solid #555; padding: 12px; text-align: left; }
+        th { background: #333; color: #d4af37; }
+        tr:nth-child(even) { background: #1a1a1a; }
+        
+        /* CSS cho phần Cộng Hưởng */
+        .timeline { list-style: none; padding: 0; }
+        .timeline-item { margin-bottom: 30px; border-left: 3px solid #d4af37; padding-left: 20px; position: relative; }
+        .timeline-item::before { content: ''; position: absolute; left: -9px; top: 0; width: 15px; height: 15px; background: #d4af37; border-radius: 50%; }
+        
+        /* ĐỔI MÀU TEXT BƯỚC 1, 2 Ở ĐÂY */
+        .step-title { color: #ffffff; font-weight: bold; font-size: 1.2em; margin-bottom: 10px; }
+        .step-detail { margin-bottom: 5px; color: #ccc; }
+        
+        .back-link { display: inline-block; margin-top: 30px; color: #d4af37; text-decoration: none; border: 1px solid #d4af37; padding: 8px 15px; }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <a href="index.html">Trang chủ</a>
+        <a href="thongtin.html">Thông tin Server</a>
+        <a href="lotrinh.html">Lộ trình</a>
+        <a href="huongdan.html">Hướng dẫn</a>
+        <a href="gioithieu.html">Giới thiệu</a>
+		<a href="taigame.html">Tải Game</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Hướng dẫn Boss & Drop</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tên Boss</th>
+                    <th>Địa điểm (Map)</th>
+                    <th>Vật phẩm Drop</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Seketon King</td><td>Dungeon</td><td>Bùa Chao, Bùa luck (boss nhỏ)</td></tr>
+                <tr><td>White Wizard</td><td>Devias</td><td>Bùa Chao, Bùa luck (boss nhỏ)</td></tr>
+                <tr><td>Red Dragon</td><td>Icarus</td><td>Lucky Star (Drop RingPen)</td></tr>
+                <tr><td>Boss Golden</td><td>Tất cả các map</td><td>Hộp Kundun 1-7</td></tr>
+                <tr><td>Medusa</td><td>Tarkan</td><td>RebBox - Đồ C8</td></tr>
+                <tr><td>Bloody Wizard</td><td>Arena</td><td>SiverBox - Set C9</td></tr>
+                <tr><td>Cursed Dragon</td><td>Arena</td><td>GoldenBox - VK+Khiên C9</td></tr>
+                <tr><td>Rabit, Summer, New year</td><td>Noria, Lost Tower, Atlans</td><td>Ngọc các loại</td></tr>
+                <tr><td>BC 7, DV6</td><td>Kill 300 quái</td><td>Ngọc các loại</td></tr>
+            </tbody>
+        </table>
+		<h1>Hướng dẫn Auto nhặt item</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Thêm Vào Auto</th>
+					<th>Item</th>
+                    <th>Thêm Vào Auto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Trái Tim</td><td>Love</td><td>Huy chương bạc và vàng</td><td>Medal</td>
+                <tr><td>Hộp kundun</td><td>Box</td><td>Lucky Star</td><td>Star</td>
+                <tr><td>Linh hồn chiến mã, quạ tinh</td><td>Dark</td><td>Lông Vũ</td><td>Feather</td>
+                <tr><td>Huy Hiệu Hoàng Tộc</td><td>Crest</td><td>Nanh Sói</td><td>Claw</td>
+                <tr><td>Mảnh vỡ áo giáp</td><td>Splinter</td><td>Bảo Hộ Nữ Thần</td><td>Bless</td>
+            </tbody>
+        </table>
+
+        <h1>Hướng dẫn Cộng Hưởng</h1>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <div class="step-title">Bước 1: Chế tạo Ngọc Sáng Tạo</div>
+                <div class="step-detail"><b>Địa điểm:</b> Gặp NPC Goblin ở Noria</div>
+                <div class="step-detail"><b>Nguyên liệu:</b> 10b, 10s, 10c, 10l</div>
+                <div class="step-detail"><b>Tỉ lệ:</b> 100% Tạo ra Jewel of Creation</div>
+            </li>
+            
+            <li class="timeline-item">
+                <div class="step-title">Bước 2: Cộng Hưởng Item</div>
+                <div class="step-detail"><b>Địa điểm:</b> Gặp NPC Cộng Hưởng Item ở Lorencia</div>
+                <div class="step-detail"><b>Nguyên liệu:</b> Item chính và item phụ phải cùng Cấp, Item nguyên liệu là Ngọc Sáng Tạo</div>
+                <div class="step-detail"><b>Tỉ lệ:</b> 20%</div>
+                <div class="step-detail"><b>Có thể cộng hưởng full dòng</div>
+            </li>
+        </ul>
+	
+		<h1>Hướng dẫn Quay Pet</h1>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <div class="step-title">Quay Demon</div>
+                <div class="step-detail"><b>Địa điểm:</b> Gặp NPC Goblin ở Noria</div>
+                <div class="step-detail"><b>Nguyên liệu:</b> 10 Imp, 1c</div>
+                <div class="step-detail"><b>Tỉ lệ:</b> 100% Tạo ra Demon</div>
+            </li>
+            
+            <li class="timeline-item">
+                 <div class="step-title">Quay Spirit of Guardian</div>
+                <div class="step-detail"><b>Địa điểm:</b> Gặp NPC Goblin ở Noria</div>
+                <div class="step-detail"><b>Nguyên liệu:</b> 10 Guardian Angel, 1c</div>
+                <div class="step-detail"><b>Tỉ lệ:</b> 100% Tạo ra Spirit of Guardian</div>
+            </li>
+			
+			<li class="timeline-item">
+                 <div class="step-title">Quay Pet Goku</div>
+                <div class="step-detail"><b>Địa điểm:</b> Gặp NPC Goblin ở Noria</div>
+                <div class="step-detail"><b>Nguyên liệu:</b> 10Demon, 1c, 1Cre, 1 Vũ khí +11 trở lên Ex</div>
+                <div class="step-detail"><b>Tỉ lệ:</b> 30% Tạo ra Pet Goku</div>
+            </li>
+			
+			<li class="timeline-item">
+                 <div class="step-title">Quay Pet Angel</div>
+                <div class="step-detail"><b>Địa điểm:</b> Gặp NPC Goblin ở Noria</div>
+                <div class="step-detail"><b>Nguyên liệu:</b> 10Spirit of Guardian, 1c, 1Cre, 1 Khiên +11 trở lên Ex</div>
+                <div class="step-detail"><b>Tỉ lệ:</b> 30% Tạo ra Pet Angel</div>
+            </li>
+			
+			<li class="timeline-item">
+                 <div class="step-title">Quay Ghost Horse</div>
+                <div class="step-detail"><b>Địa điểm:</b> Gặp NPC Goblin ở Noria</div>
+                <div class="step-detail"><b>Nguyên liệu:</b> 1Dark Horse, 1c, 1Cre, 1 Vũ khí +13 Ex</div>
+                <div class="step-detail"><b>Tỉ lệ:</b> 30% Tạo ra Ghost Horse</div>
+            </li>
+		
+        </ul>
+        <h1>Hướng dẫn Đổi Class - Đổi đồ</h1>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <div class="step-title">Đổi Class</div>
+                <div class="step-detail"><b>Dùng lệnh /doiclass (class mong muốn)</div>
+                <div class="step-detail"><b>Tên viết tắt : dw dk ef mg dl</div>
+            </li>
+            
+            <li class="timeline-item">
+                <div class="step-title">Đổi Item</div>
+                <div class="step-detail"><b>Địa điểm:</b> Gặp NPC Trao đổi Item ở Lorencia</div>
+                <div class="step-detail"><b>Có thể đổi item cùng cấp và cùng loại với nhau</div>
+                <div class="step-detail"><b>Chi phí đổi = Cấp độ item x1.000 + 10.000(nếu chọn đúng item cần đổi)</div>
+                <div class="step-detail"><b>Không thể đổi vũ khí sang khiên và ngược lại</div>
+            </li>
+        </ul>
+        <a href="index.html" class="back-link">← Quay lại trang chủ</a>
+    </div>
+</div>
+
+</body>
+</html>
